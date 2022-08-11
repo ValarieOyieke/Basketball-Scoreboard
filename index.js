@@ -20,15 +20,15 @@ function addThreeHome() {
 
 function addOneGuest() {
     guestPoints += 1
-    guestPointsEl.textContent = homePoints
+    guestPointsEl.textContent = guestPoints
 }
 
 function addTwoGuest() {
     guestPoints += 2
-    guestPointsEl.textContent = homePoints
+    guestPointsEl.textContent = guestPoints
 }
 
 function addThreeGuest() {
     guestPoints += 3
-    guestPointsEl.textContent = homePoints
+    guestPointsEl.textContent = guestPoints
 }
