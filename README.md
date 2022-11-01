@@ -1,4 +1,4 @@
-A basketball scoreboard created with help of Per Borgen of Scrimba
+A basketball scoreboard project from Scrimba
 
 Access the courses here:
 
