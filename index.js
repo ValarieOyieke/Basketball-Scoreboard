@@ -32,3 +32,4 @@ function addThreeGuest() {
     guestPoints += 3
     guestPointsEl.textContent = guestPoints
 }
+
