@@ -1,48 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 body {
     margin: 0;
-    background:#19244d;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
 /* LAYOUT */
-
 .container {
     display: flex;
     justify-content: space-around;
-    margin-top: 80px;
+    align-items: center;
+    background:#19244d;
+    width: 100%;
+    max-width: 37em;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
 }
 
 .box {
     background-color: black;
-    height: 200px;
-    width: 200px;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    height: 150px;
+    width: 150px;
+    border-radius: 0.625rem;
+    margin-bottom: 1.875rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#home {
+.section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#guest {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 /* TYPOGRAPHY */
-
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 60px;
-    line-height: 36px;
+    font-size: 3rem;
+    line-height: 30px;
     color: #EEEEEE;
 }
 
@@ -55,22 +64,44 @@ h1:hover {
 #home-el, #guest-el {
     color: #F94F6D;
     font-family: 'Silkscreen', cursive;
-    font-size: 100px;
+    font-size: 4.5rem;
 }
 
-/* BUTTON  */
 
+/* BUTTON */
 button {
     background: #19244d;
     color: #EEEEEE;
-    width: 60px;
-    border: 1px solid white;
-    border-radius: 7px;
-    padding: 2px 4px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50px;
+    border: 0.0625rem solid white;
+    border-radius: 0.4rem;
+    padding: 0.125em 0.25em;
+    font-family: 'Verdana', sans-serif;
 }
 
 button:hover {
     color: #ffdc5e;
 }
 
+/* MEDIA QUERY  */
+@media (max-width: 35em){
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 98%;
+        max-width: 25em;
+    }
+     
+    .box {
+        height: 110px;
+        width: 110px;
+    }
+
+    h1 {
+    font-size: 2.2rem;
+    }
+
+    button {
+        width: 38px;
+    }
+}
